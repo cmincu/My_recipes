@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".RecipesActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+    
+  
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+		    <ListView
+		        android:id="@+id/lvRecipes"
+		        android:layout_width="match_parent"
+		        android:layout_height="385dp" >
+		    </ListView>
+
+            <Button
+                android:id="@+id/getRecipes"
+                style="?buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:text="@string/getRecipes" />
+
+        </LinearLayout>
+ 
+    </FrameLayout>
